@@ -43,6 +43,6 @@ export default class Dom {
     };
     deleteDiv.onclick = () => {
       paragraphDiv.remove();
-    }
+    };
   }
 }
