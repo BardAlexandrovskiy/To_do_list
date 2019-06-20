@@ -10,9 +10,7 @@
   margin: 0;
   text-decoration: none;
   outline: none;
-  font-family: 'Roboto Condensed', sans-serif;
   border: none;
-  font-size: 0;
 }
 
 html,
@@ -24,6 +22,8 @@ body,
 .root {
   min-width: 320px;
   color: black;
+  font-size: 0;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .logo {
@@ -33,6 +33,7 @@ body,
   text-align: center;
   font-family: 'Modak', cursive;
   text-shadow: 1px 1px 1px white;
+  font-weight: normal;
 }
 
 .to_do_list {
@@ -45,10 +46,21 @@ body,
   min-height: 80px;
   padding: 5px 2.5%;
   background-color: white;
-  margin: 1px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.to_do_list .paragraph:nth-child(3n) {
+  background-color: rgb(237, 237, 252);
+}
+
+.to_do_list .paragraph:nth-child(3n-1) {
+  background-color: rgb(247, 225, 225);
+}
+
+.to_do_list .paragraph:nth-child(3n-2) {
+  background-color: rgb(226, 245, 226);
 }
 
 .to_do_list .status {
@@ -127,4 +139,11 @@ body,
 
 .input_fix_container .input:focus {
   border: 1px solid black;
+}
+
+@media (max-width: 736px) {
+  .to_do_list .status,
+  .to_do_list .delete {
+    cursor: auto;
+  }
 }

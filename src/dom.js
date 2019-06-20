@@ -11,7 +11,7 @@ export default class Dom {
     function addNewElement(parent, element) {
       return parent.appendChild(document.createElement(element));
     }
-    const paragraphDiv = addNewElement(this.toDoListDiv, 'div');
+    const paragraphDiv = addNewElement(this.toDoListDiv, 'li');
     paragraphDiv.className = 'paragraph';
     const statusDiv = addNewElement(paragraphDiv, 'div');
     statusDiv.className = 'status status_no_check';
