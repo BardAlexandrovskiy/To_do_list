@@ -1,0 +1,22 @@
+{
+  "name": "to_do_list",
+  "version": "1.0.0",
+  "description": "my to do app",
+  "main": "index.js",
+  "scripts": {
+    "lint": "node_modules/.bin/eslint src/*.{js,jsx} --fix",
+    "weather": "parcel ./src/index.html",
+    "build": "rm -rf dist && parcel build ./src/index.html --public-url /To_do_list && cp ./dist/index.html ./dist/404.html",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BardAlexandrovskiy/To_do_list.git"
+  },
+  "author": "Alexandr Bardovskiy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BardAlexandrovskiy/To_do_list/issues"
+  },
+  "homepage": "https://github.com/BardAlexandrovskiy/To_do_list#readme"
+}

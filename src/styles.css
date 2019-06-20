@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Modak');
+
+/* font-family: 'Modak', cursive; */
+/* font-family: 'Roboto Condensed', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  border: none;
+  font-size: 0;
+}
+
+html,
+body,
+.root {
+  height: 100%;
+}
+
+.root {
+  min-width: 320px;
+  color: black;
+}
+
+.logo {
+  font-size: 45px;
+  line-height: 60px;
+  background-color: darkslateblue;
+  text-align: center;
+  font-family: 'Modak', cursive;
+  text-shadow: 1px 1px 1px white;
+}
+
+.to_do_list {
+  height: calc(100% - 120px);
+  background-color: darkcyan;
+  overflow-y: auto;
+}
+
+.to_do_list .paragraph {
+  min-height: 80px;
+  padding: 5px 2.5%;
+  background-color: white;
+  margin: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.to_do_list .status {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.to_do_list .status_check {
+  border: 1px solid lightgreen;
+}
+
+.to_do_list .status_no_check {
+  border: 1px solid lightgrey;
+}
+
+.to_do_list .status_img {
+  display: none;
+  width: inherit;
+}
+
+.to_do_list .status_img_check {
+  display: block;
+}
+
+.to_do_list .status_img_no_check {
+  display: none;
+}
+
+.to_do_list .text {
+  font-size: 25px;
+  line-height: 30px;
+  color: black;
+  width: 73%;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.to_do_list .text_check {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.to_do_list .delete {
+  width: 30px;
+  cursor: pointer;
+}
+
+.to_do_list .delete_img {
+  width: inherit;
+}
+
+.input_fix_container {
+  background-color: darkslategrey;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input_fix_container .input {
+  width: 95%;
+  height: 45px;
+  border-radius: 5px;
+  color: black;
+  font-size: 30px;
+  padding: 0 10%;
+}
+
+.input_fix_container .input::placeholder {
+  font-size: 25px;
+  text-align: center;
+}
+
+.input_fix_container .input:focus {
+  border: 1px solid black;
+}
