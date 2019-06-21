@@ -13,20 +13,24 @@
   border: none;
 }
 
+button {
+  background-color: transparent;
+}
+
 html,
 body,
-.root {
+#root {
   height: 100%;
 }
 
-.root {
+#root {
   min-width: 320px;
   color: black;
   font-size: 0;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-.header {
+#header {
   font-size: 45px;
   line-height: 60px;
   background-color: rgb(80, 70, 145);
@@ -36,91 +40,100 @@ body,
   font-weight: normal;
 }
 
-.to_do_list {
+#to_do_list {
   height: calc(100% - 120px);
   background-color: rgb(239, 247, 247);
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
-.to_do_list .paragraph {
+.to_do_item {
+  opacity: 0;
+  display: flex;
   min-height: 80px;
   padding: 5px 2.5%;
   background-color: white;
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: opacity 0.3s;
 }
 
-.to_do_list .paragraph:nth-child(5n) {
+.to_do_item_add_del_animation {
+  opacity: 1;
+}
+
+.to_do_item:nth-child(5n) {
   background-color: rgb(237, 237, 252);
 }
 
-.to_do_list .paragraph:nth-child(5n-1) {
+.to_do_item:nth-child(5n-1) {
   background-color: rgb(255, 255, 240);
 }
 
-.to_do_list .paragraph:nth-child(5n-2) {
+.to_do_item:nth-child(5n-2) {
   background-color: rgb(226, 245, 226);
 }
 
-.to_do_list .paragraph:nth-child(5n-3) {
+.to_do_item:nth-child(5n-3) {
   background-color: rgb(255, 230, 251);
 }
 
-.to_do_list .paragraph:nth-child(5n-4) {
+.to_do_item:nth-child(5n-4) {
   background-color: rgb(255, 225, 231);
 }
 
-.to_do_list .button_check {
+.check_box {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  border: 1px solid lightgrey;
+  transition: border 0.3s;
 }
 
-.to_do_list .button_checked {
+.check_box_checked {
   border: 1px solid lightgreen;
 }
 
-.to_do_list .button_no_checked {
-  border: 1px solid lightgrey;
-}
-
-.to_do_list .button_check .img {
-  display: none;
+.img_check {
   width: inherit;
+  height: inherit;
+  transform: translate(25px, -25px);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
 }
 
-.to_do_list .button_check .img_checked {
-  display: block;
+.img_checked {
+  opacity: 1;
+  transform: translate(0);
 }
 
-.to_do_list .button_check .img_no_checked {
-  display: none;
-}
-
-.to_do_list .text {
+.to_do_text {
   font-size: 25px;
   line-height: 30px;
   color: black;
   width: 73%;
   text-align: left;
   word-wrap: break-word;
+  transition: opacity 0.3s;
 }
 
-.to_do_list .text_checked {
+.to_do_text_checked {
   opacity: 0.5;
   text-decoration: line-through;
+  transition: opacity 0.3s;
 }
 
-.to_do_list .button_delete {
+.button_delete {
   width: 30px;
+  height: 30px;
 }
 
-.to_do_list .button_delete .img {
+.img_delete {
   width: inherit;
+  height: inherit;
 }
 
-.footer {
+#footer {
   background-color: darkslategrey;
   height: 60px;
   display: flex;
@@ -129,7 +142,7 @@ body,
   justify-content: center;
 }
 
-.footer .input {
+#to_do_input {
   width: 95%;
   height: 45px;
   border-radius: 5px;
@@ -138,11 +151,11 @@ body,
   padding: 0 10%;
 }
 
-.footer .input::placeholder {
+#to_do_input::placeholder {
   font-size: 25px;
   text-align: center;
 }
 
-.footer .input:focus {
+#to_do_input:focus {
   border: 1px solid black;
 }
