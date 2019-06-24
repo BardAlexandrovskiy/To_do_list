@@ -2,8 +2,8 @@
   "name": "To do list",
   "short_name": "TD",
   "start_url": "/To_do_list",
-  "theme_color": "#fff",
-  "background_color": "#3D3E58",
+  "theme_color": "#3D3E58",
+  "background_color": "#fff",
   "display": "standalone",
   "icons": [
     {
