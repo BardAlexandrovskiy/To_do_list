@@ -33,11 +33,12 @@ body,
 #header {
   font-size: 45px;
   line-height: 60px;
-  background-color: rgb(80, 70, 145);
+  background-color: rgb(199, 194, 233);
   text-align: center;
   font-family: 'Modak', cursive;
-  text-shadow: 1px 1px 1px white;
+  text-shadow: 2px 2px 1px rgb(0, 0, 0);
   font-weight: normal;
+  color: rgb(95, 75, 104);
 }
 
 #to_do_list {
@@ -55,43 +56,43 @@ body,
   background-color: white;
   justify-content: space-between;
   align-items: center;
-  transition: opacity 0.3s;
+  transition: opacity 0.5s;
 }
 
-.to_do_item_add_del_animation {
+.to_do_item_add_animation {
   opacity: 1;
 }
 
 .to_do_item:nth-child(5n) {
-  background-color: rgb(237, 237, 252);
+  background-color: rgba(237, 237, 252, 0.719);
 }
 
 .to_do_item:nth-child(5n-1) {
-  background-color: rgb(255, 255, 240);
+  background-color: rgba(255, 255, 240, 0.747);
 }
 
 .to_do_item:nth-child(5n-2) {
-  background-color: rgb(226, 245, 226);
+  background-color: rgba(226, 245, 226, 0.623);
 }
 
 .to_do_item:nth-child(5n-3) {
-  background-color: rgb(255, 230, 251);
+  background-color: rgba(255, 230, 251, 0.733);
 }
 
 .to_do_item:nth-child(5n-4) {
-  background-color: rgb(255, 225, 231);
+  background-color: rgba(255, 225, 231, 0.74);
 }
 
 .check_box {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid lightgrey;
+  border: 1px solid rgb(218, 208, 208);
   transition: border 0.3s;
 }
 
 .check_box_checked {
-  border: 1px solid lightgreen;
+  border: 1px solid rgb(193, 235, 193);
 }
 
 .img_check {
@@ -134,7 +135,7 @@ body,
 }
 
 #footer {
-  background-color: darkslategrey;
+  background-color: rgb(61, 62, 88);
   height: 60px;
   display: flex;
   flex-direction: column;
