@@ -2,9 +2,8 @@
   "name": "To do list",
   "short_name": "TD",
   "theme_color": "rgb(199,194,233)",
-  "background_color": "#2684d0",
+  "background_color": "#2196f3",
   "display": "fullscreen",
-  "start_url": "https://bardalexandrovskiy.github.io/To_do_list/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
