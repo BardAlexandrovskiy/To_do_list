@@ -57,7 +57,7 @@ export default class Dom {
               localStorageCheck.list.forEach(elementLocal => {
                 if (elementLocal.id === liId) {
                   // eslint-disable-next-line no-param-reassign
-                  element.check = true;
+                  elementLocal.check = true;
                 }
                 this.setLocalStorage(localStorageCheck);
               });
@@ -70,7 +70,7 @@ export default class Dom {
               localStorageCheck.list.forEach(elementLocal => {
                 if (elementLocal.id === liId) {
                   // eslint-disable-next-line no-param-reassign
-                  element.check = false;
+                  elementLocal.check = false;
                 }
                 this.setLocalStorage(localStorageCheck);
               });
