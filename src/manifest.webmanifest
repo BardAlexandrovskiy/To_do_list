@@ -3,7 +3,7 @@
   "short_name": "TD",
   "theme_color": "rgb(199,194,233)",
   "background_color": "#2196f3",
-  "display": "fullscreen",
+  "display": "standalone",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
