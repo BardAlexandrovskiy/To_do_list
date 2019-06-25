@@ -32,7 +32,7 @@ body,
 
 #header {
   font-size: 45px;
-  line-height: 60px;
+  line-height: 80px;
   background-color: rgb(199, 194, 233);
   text-align: center;
   font-family: 'Modak', cursive;
@@ -42,7 +42,7 @@ body,
 }
 
 #to_do_list {
-  height: calc(100% - 120px);
+  height: calc(100% - 160px);
   background-color: rgb(239, 247, 247);
   overflow-y: auto;
   overflow-x: hidden;
@@ -136,7 +136,7 @@ body,
 
 #footer {
   background-color: rgb(61, 62, 88);
-  height: 60px;
+  height: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,8 +145,8 @@ body,
 
 #to_do_input {
   width: 95%;
-  height: 45px;
-  border-radius: 5px;
+  height: 60px;
+  border-radius: 50px;
   color: black;
   font-size: 30px;
   padding: 0 10%;
