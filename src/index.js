@@ -1,11 +1,13 @@
-import Dom from './dom';
+import TodoList from './todoList';
 
-const dom = new Dom();
+const todoList = new TodoList();
 
-dom.localStorageCreate();
+const todoInput = document.querySelector('#to_do_input');
 
-dom.toDoInput.addEventListener('keydown', key => {
-  if (key.keyCode === 13 && dom.toDoInput.value.trim() !== '') {
-    dom.createToDoItem();
+todoInput.addEventListener('keydown', key => {
+  if (key.keyCode === 13 && todoInput.value.trim()) {
+    todoList.createToDoItem(todoInput.value);
+    todoInput.value = '';
+    todoInput.blur();
   }
 });

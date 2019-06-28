@@ -49,18 +49,12 @@ body,
 }
 
 .to_do_item {
-  opacity: 0;
   display: flex;
   min-height: 80px;
   padding: 5px 2.5%;
   background-color: white;
   justify-content: space-between;
   align-items: center;
-  transition: opacity 0.5s;
-}
-
-.to_do_item_add_animation {
-  opacity: 1;
 }
 
 .to_do_item:nth-child(5n) {
