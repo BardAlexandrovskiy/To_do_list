@@ -17,6 +17,15 @@ button {
   background-color: transparent;
 }
 
+button:active,
+button:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
 html,
 body,
 #root {
@@ -147,6 +156,11 @@ body,
 }
 
 #to_do_input::placeholder {
+  font-size: 25px;
+  text-align: center;
+}
+
+#to_do_input::-ms-input-placeholder {
   font-size: 25px;
   text-align: center;
 }
